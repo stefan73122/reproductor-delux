@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Esta descripción es la que aparece en los buscadores debajo de la URL" />
+	<link href="./styles/practica7.css" rel="stylesheet" type="text/css" />
+	<link href="./styles/formulario.css" rel="stylesheet" type="text/css" />
+	<link href="./styles/resets.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700,800&display=swap" rel="stylesheet">
+	<title>Registro</title>
+</head>
+
+<body>
+	<header>
+		<a href="" class='logo'>
+			<img src="./img/Logo.png" />
+		</a>
+		<nav>
+			<a class="ultimos" href="">Últimos artículos</a>
+			<a href="">Popular</a>
+			<a href="">Tecnología</a>
+		</nav>
+		<div class="options">
+			<img src="./img/Search.png" />
+			<img src="./img/User.png" />
+			<!-- <div class="userMenu">
+					<a href="">Login</a>
+					<a href="">Registrarme</a>
+				</div> -->
+		</div>
+
+	</header>
+	<main>
+		<h1>Formulario de registro</h1>
+		<form>
+			<div class='field'>
+				<label>Nombre</label>
+				<input name='nombre' type='name' required value="Nombre" placeholder='Nombre' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Apellidos</label>
+				<input name='apellidos' type='name' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Estado laboral</label>
+				<select name='estadoLaboral' required>
+					<option selected disabled>Sel. una opción</option>
+					<option>Desempleado</option>
+					<option>Trabajador</option>
+					<option>Trabajador por cuenta ajena</option>
+				</select>
+			</div>
+			<div class='field'>
+				<label>Email</label>
+				<input name='Email' type='email' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Contraseña</label>
+				<input name='Contraseña' type='password' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Teléfono</label>
+				<input name='Telefono' type='number' autocomplete />
+			</div>
+			<div class='textBox'>
+				<label>Otros datos</label>
+				<textarea></textarea>
+			</div>
+			<div class='gustos'>
+				<label>¿Quieres recibir información
+					relacionada con tus gustos?</label>
+				<div><input name='gustos' type='radio' />Sí</div>
+				<div><input name='gustos' type='radio' />No</div>
+			</div>
+			<div class='submit'>
+				<button>
+					REGISTRARME
+				</button>
+			</div>
+		</form>
+	</main>
+</body>
+
+</html>
